@@ -59,10 +59,11 @@ class _CreateSurveyWidgetState extends State<CreateSurveyWidget> {
         title: const Text('Frage erstellen'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(30.0),
         child: Form(
           key: _formKey,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TextFormField(
                 controller: _questionController,
